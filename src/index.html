@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>MD-Editor</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <div class="container">
-      <div id="toolbar">
-        
-      </div>
+
+<head>
+  <meta charset="UTF-8">
+  <title>MD-Editor</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src renderer 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src renderer 'self'">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../node_modules/@mdi/font/css/materialdesignicons.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="options" class="options">
+        <div id="buttons-list">
+          <button id="new" class="button is-dark">
+            <span>New File</span>
+            <span class="icon mdi mdi-plus mdi-light mdi-24px" \>
+          </button>
+          <button id="load" class="button is-dark">
+            <span>Load File</span>
+            <span class="icon mdi mdi-folder mdi-light mdi-24px" \>
+          </button>
+          <button id="settings" class="button is-dark">
+            <span>Settings</span>
+            <span class="icon mdi mdi-cog mdi-light mdi-24px" \>
+          </button>
+        </div>
     </div>
-  </body>
+  </div>
+  <script src="js/renderer.js"></script>
+</body>
+
 </html>

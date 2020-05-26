@@ -16,5 +16,6 @@ module.exports = {
     'ecmaVersion': 2018,
   },
   'rules': {
+    'require-jsdoc': 0,
   },
 };

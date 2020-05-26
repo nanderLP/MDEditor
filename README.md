@@ -3,6 +3,6 @@
 # run
 ```sh
 yarn dev
-# or 
+# or
 npm run dev
 ```
