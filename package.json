@@ -5,7 +5,7 @@
   "description": "Markdown Editor",
   "main": "src/index.js",
   "scripts": {
-    "css-build": "node-sass src/_sass/main.scss src/css/main.css",
+    "css-build": "node-sass --watch --recursive --output src/css --source-map true --source-map-contents src/_sass",
     "css-watch": "npm run css-build -- --watch",
     "dev": "npm-run-all --parallel css-watch start",
     "start": "electron-forge start",
