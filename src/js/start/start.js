@@ -12,5 +12,5 @@ ipcMain.on('start-load', (event) => {
   event.sender.send('editor-start', file);
 });
 ipcMain.on('start-settings', (event) => {
-  event.sender.loadFile(path.join(__dirname, '..', 'settings.html'));
+  event.sender.loadFile(path.join(__dirname, '..', '..', 'settings.html'));
 });
