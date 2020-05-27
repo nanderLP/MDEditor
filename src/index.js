@@ -1,6 +1,8 @@
 const {app, BrowserWindow} = require('electron');
 const path = require('path');
-require('./js/main');
+
+require('./js/start/start');
+require('./js/editor/editor');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 // eslint-disable-next-line max-len
