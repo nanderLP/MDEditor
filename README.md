@@ -3,9 +3,10 @@
 # Features
 - make new Markdown File
 - load Markdown File
+- Discord Rich Presence
 
 # To-Do
-- Discord Rich Presence
+- Update Rich Presence (File Info, etc.)
 - Themes
 - load File from Github Repository
 

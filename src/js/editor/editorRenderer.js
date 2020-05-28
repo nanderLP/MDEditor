@@ -1,12 +1,7 @@
 const { ipcRenderer } = require('electron');
 
+ipcRenderer.send('editor-start');
+// eslint-disable-next-line no-unused-vars
 ipcRenderer.on('editor-load-file', (event, file) => {
-  // TODO
-});
-ipcRenderer.on('editor-new-file', () => {
-
-});
-
-ipcRenderer.on('editor-start', () => {
-  console.log('test');
+  // TODO implement file
 });

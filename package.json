@@ -55,11 +55,13 @@
   "dependencies": {
     "@mdi/font": "^5.3.45",
     "bulma": "^0.8.2",
+    "discord-rpc": "^3.1.1",
     "electron": "9.0.0",
     "electron-compile": "^6.4.4",
     "electron-reload": "^1.5.0",
     "electron-settings": "^3.2.0",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "register-scheme": "github:devsnek/node-register-scheme"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.51",
@@ -67,7 +69,6 @@
     "@electron-forge/maker-rpm": "6.0.0-beta.51",
     "@electron-forge/maker-squirrel": "6.0.0-beta.51",
     "@electron-forge/maker-zip": "6.0.0-beta.51",
-    "bulma": "^0.8.2",
     "electron": "9.0.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
