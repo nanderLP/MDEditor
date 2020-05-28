@@ -1,4 +1,12 @@
 const { ipcRenderer } = require('electron');
+const customTitlebar = require('custom-electron-titlebar');
+
+// eslint-disable-next-line no-new
+new customTitlebar.Titlebar({
+  menu: null,
+  unfocusEffect: true,
+  titleHorizontalAlignment: 'left',
+});
 
 const x = document.getElementsByClassName('button');
 

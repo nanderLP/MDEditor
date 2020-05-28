@@ -25,6 +25,8 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true,
     },
+    autoHideMenuBar: true,
+    frame: false,
   });
 
   // and load the index.html of the app.
