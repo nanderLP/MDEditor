@@ -1,11 +1,10 @@
-const {ipcRenderer} = require('electron');
+const { ipcRenderer } = require('electron');
 
 const x = document.getElementsByClassName('button');
 
-for (let i = 0; i < x.length; i++) {
-  const id = x[i].id;
-  console.log(id);
+for (let i = 0; i < x.length; i += 1) {
+  const { id } = x[i];
   x[i].addEventListener('click', () => {
-    ipcRenderer.send('start-'+id);
+    ipcRenderer.send(`start-${id}`);
   });
 }

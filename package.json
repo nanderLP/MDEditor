@@ -55,6 +55,7 @@
   "dependencies": {
     "@mdi/font": "^5.3.45",
     "bulma": "^0.8.2",
+    "electron": "9.0.0",
     "electron-compile": "^6.4.4",
     "electron-reload": "^1.5.0",
     "electron-settings": "^3.2.0",
@@ -68,9 +69,9 @@
     "@electron-forge/maker-zip": "6.0.0-beta.51",
     "bulma": "^0.8.2",
     "electron": "9.0.0",
-    "eslint": "^7.1.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5"
   }
