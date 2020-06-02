@@ -38,7 +38,7 @@
         "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
-        "name": "md-editor"
+        "name": "mdeditor"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -48,7 +48,7 @@
       },
       "windowsStoreConfig": {
         "packageName": "",
-        "name": "md-editor"
+        "name": "mdeditor"
       }
     }
   },

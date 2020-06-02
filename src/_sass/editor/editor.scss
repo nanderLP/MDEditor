@@ -5,3 +5,37 @@
 
 // 2. Import the rest of Bulma
 @import "../../../node_modules/bulma/bulma";
+
+body {
+    background-color: #666666;
+  }
+  #dashboard {
+    background-color: #525252;
+    height: 27px;
+    position: relative;
+    border: 2px solid;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  #output{
+    border: solid 1px;
+    border-color: black;
+    margin-left: 500px;
+  }
+  #lines{
+    border: solid black 1px;
+  }
+  #editArea{
+    margin-left: 20px;
+    margin-top: -87px;
+  }
+  #openFolder {
+  }
+  #FatLetters {
+  }
+  #italic {
+  }
+  #underline {
+  }
