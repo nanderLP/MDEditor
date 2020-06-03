@@ -6,48 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor</title>
     <link rel="stylesheet" href="css/Editor/editor.css">
+    <link rel="stylesheet" href="_sass/editor/editor.scss">
     <link rel="stylesheet" href="../node_modules/@mdi/font/css/materialdesignicons.min.css">
 </head>
 
 <body>
-<div id="dashboard">
-    <div class="wrapper">
-        <div id="openFile" class="item">
-            <span class="icon mdi mdi-file-plus mdi-light mdi-24px">
-        </div>
-        <div id="openFolder" class="item">
-            <span class="icon mdi mdi-folder mdi-light mdi-24px">
-        </div>
-        <div id="FatLetters" class="item">
-            <span class="icon mdi mdi-format-underline mdi-light mdi-24px">
-        </div>
-        <div id="italic" class="item">
-            <span class="icon mdi mdi-format-bold mdi-light mdi-24px">
-        </div>
-        <div id="underline" class="item">
-            <span class="icon mdi mdi-format-italic mdi-light mdi-24px">
+    <div id="dashboard">
+        <div class="wrapper">
+            <div id="openFile" class="item">
+                <span class="icon mdi mdi-file-plus mdi-light mdi-24px">
+            </div>
+            <div id="openFolder" class="item">
+                <span class="icon mdi mdi-folder mdi-light mdi-24px">
+            </div>
+            <div id="FatLetters" class="item">
+                <span class="icon mdi mdi-format-underline mdi-light mdi-24px">
+            </div>
+            <div id="italic" class="item">
+                <span class="icon mdi mdi-format-bold mdi-light mdi-24px">
+            </div>
+            <div id="underline" class="item">
+                <span class="icon mdi mdi-format-italic mdi-light mdi-24px">
+            </div>
         </div>
     </div>
-</div>
-<div id="editDiv">
-    <form>
-        <div id="Lines">
-            1
-            <br>
-            2
-            <br>
-            3
-            <br>
-            4
-            <br>
-            5
+    <div id="editDiv">
+        <div class="columns">
+            <form>
+                <div id="lines" class="column is-half">
+                    1
+                    <br>
+                    2
+                    <br>
+                    3
+                    <br>
+                    4
+                    <br>
+                    5
+                </div>
+                <textarea id="editArea" cols="140" rows="58" class="column is-full"></textarea>
+            </form>
         </div>
-        <textarea id="editArea" cols="100" rows="100"></textarea>
-    </form>
-</div>
-<div id="output">
-
-</div>
+        <div id="output" class="is-three-fifths">
+            output
+        </div>
+    </div>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
 @import "../../../node_modules/bulma/bulma";
 
 body {
-    background-color: #666666;
+    background-color: #444444;
   }
   #dashboard {
     background-color: #525252;
@@ -25,11 +25,14 @@ body {
     margin-left: 500px;
   }
   #lines{
-    border: solid black 1px;
+    margin-top: 14px;
+    margin-left: 3px;
+    color: black;
   }
   #editArea{
-    margin-left: 20px;
-    margin-top: -87px;
+    margin-left: 30px;
+    margin-top: -139px;
+    background-color: grey;
   }
   #openFolder {
   }
@@ -38,4 +41,10 @@ body {
   #italic {
   }
   #underline {
+  }
+  #output{
+    margin-left: 690px;
+    margin-right: 0px;
+    margin-top: -1022px;
+    height: 1010px;
   }
