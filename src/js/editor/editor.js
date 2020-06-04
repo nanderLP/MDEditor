@@ -1,4 +1,10 @@
 const { ipcMain } = require('electron');
+const { chooseFile } = require('../utils/chooseFile');
+
+ipcMain.on('load-file', (event) => {
+  const file = chooseFile();
+  event.sender.send('editor-load-file', file);
+});
 
 ipcMain.on('editor-start', (event) => {
   const file = global.currentFile;
@@ -7,4 +13,5 @@ ipcMain.on('editor-start', (event) => {
   } else {
     event.sender.send('editor-load-file', file);
   }
+  global.currentFile = null;
 });

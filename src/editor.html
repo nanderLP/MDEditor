@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor</title>
-    <link rel="stylesheet" href="css/Editor/editor.css">
-    <link rel="stylesheet" href="_sass/editor/editor.scss">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Content-Security-Policy"
+        content="default-src 'self'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="css/editor/editor.css">
     <link rel="stylesheet" href="../node_modules/@mdi/font/css/materialdesignicons.min.css">
 </head>
 
 <body>
-    <div id="dashboard">
-        <div class="wrapper">
-            <div id="openFile" class="item">
-                <span class="icon mdi mdi-file-plus mdi-light mdi-24px">
-            </div>
-            <div id="openFolder" class="item">
-                <span class="icon mdi mdi-folder mdi-light mdi-24px">
-            </div>
-            <div id="FatLetters" class="item">
-                <span class="icon mdi mdi-format-underline mdi-light mdi-24px">
-            </div>
-            <div id="italic" class="item">
-                <span class="icon mdi mdi-format-bold mdi-light mdi-24px">
-            </div>
-            <div id="underline" class="item">
-                <span class="icon mdi mdi-format-italic mdi-light mdi-24px">
-            </div>
+
+    <div id="topbar">
+        <div id="openFile" class="item">
+            <span class="icon mdi mdi-file-plus mdi-light mdi-24px">
+        </div>
+        <div id="openFolder" class="item">
+            <span class="icon mdi mdi-folder mdi-light mdi-24px">
+        </div>
+        <div id="FatLetters" class="item">
+            <span class="icon mdi mdi-format-underline mdi-light mdi-24px">
+        </div>
+        <div id="italic" class="item">
+            <span class="icon mdi mdi-format-bold mdi-light mdi-24px">
+        </div>
+        <div id="underline" class="item">
+            <span class="icon mdi mdi-format-italic mdi-light mdi-24px">
         </div>
     </div>
     <div id="editDiv">
@@ -51,6 +53,7 @@
             output
         </div>
     </div>
+    <script src="js/editor/editorRenderer.js"></script>
 </body>
 
 </html>

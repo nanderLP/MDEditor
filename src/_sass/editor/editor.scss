@@ -6,45 +6,36 @@
 // 2. Import the rest of Bulma
 @import "../../../node_modules/bulma/bulma";
 
-body {
-    background-color: #444444;
-  }
-  #dashboard {
-    background-color: #525252;
-    height: 27px;
-    position: relative;
-    border: 2px solid;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-  #output{
-    border: solid 1px;
-    border-color: black;
-    margin-left: 500px;
-  }
-  #lines{
-    margin-top: 14px;
-    margin-left: 3px;
-    color: black;
-  }
-  #editArea{
-    margin-left: 30px;
-    margin-top: -139px;
-    background-color: grey;
-  }
-  #openFolder {
-  }
-  #FatLetters {
-  }
-  #italic {
-  }
-  #underline {
-  }
-  #output{
-    margin-left: 690px;
-    margin-right: 0px;
-    margin-top: -1022px;
-    height: 1010px;
-  }
+body, html {
+  background-color: #444444;
+  overflow-y: hidden;
+}
+#topbar {
+  background-color: #525252;
+  height: 1rem;
+  position: relative;
+  border: 2px solid;
+  display: flex;
+  flex-direction: row;
+}
+/*#output {
+  border: solid 1px;
+  border-color: black;
+  margin-left: 500px;
+}
+#lines {
+  margin-top: 14px;
+  margin-left: 3px;
+  color: black;
+}
+#editArea {
+  margin-left: 30px;
+  margin-top: -139px;
+  background-color: grey;
+}
+#output {
+  margin-left: 690px;
+  margin-right: 0px;
+  margin-top: -1022px;
+  height: 1010px;
+}*/

@@ -7113,38 +7113,38 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-body {
-  background-color: #444444; }
+body, html {
+  background-color: #444444;
+  overflow-y: hidden; }
 
-#dashboard {
+#topbar {
   background-color: #525252;
-  height: 27px;
+  height: 1rem;
   position: relative;
-  border: 2px solid; }
-
-.wrapper {
+  border: 2px solid;
   display: flex;
   flex-direction: row; }
 
-#output {
+/*#output {
   border: solid 1px;
   border-color: black;
-  margin-left: 500px; }
-
+  margin-left: 500px;
+}
 #lines {
   margin-top: 14px;
   margin-left: 3px;
-  color: black; }
-
+  color: black;
+}
 #editArea {
   margin-left: 30px;
   margin-top: -139px;
-  background-color: grey; }
-
+  background-color: grey;
+}
 #output {
   margin-left: 690px;
   margin-right: 0px;
   margin-top: -1022px;
-  height: 1010px; }
+  height: 1010px;
+}*/
 
 /*# sourceMappingURL=editor.css.map */
