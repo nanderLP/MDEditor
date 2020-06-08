@@ -1,22 +1,8 @@
 const { ipcRenderer, Menu, MenuItem } = require('electron');
 const customTitlebar = require('custom-electron-titlebar');
 
-const menu = new Menu();
-menu.append(
-  new MenuItem({
-    label: 'New File',
-    click: () => ipcRenderer.send('editor-start'),
-  }),
-);
-menu.append(
-  new MenuItem({
-    label: 'Open File',
-    click: () => ipcRenderer.send('load-file'),
-  }),
-);
-// eslint-disable-next-line no-new
 new customTitlebar.Titlebar({
-  menu,
+	backgroundColor: customTitlebar.Color.fromHex('#444')
 });
 
 ipcRenderer.send('editor-start');
