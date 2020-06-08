@@ -44,10 +44,6 @@ menu.append(new MenuItem({
 let title = new customTitlebar.Titlebar({
 	backgroundColor: customTitlebar.Color.fromHex('#444'),
 	shadow: true,
-	closeable: true,
-	minimizable: true,
-	maximizable: true,
-	itemBackgroundColor: customTitlebar.Color.fromHex('#fff')
 });
 
 title.updateTitle("MD-Editor")
