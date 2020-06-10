@@ -15,7 +15,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Package
-      uses: CultureHQ/actions-yarn@master
+    - name: yarn actions (yaml)
+      uses: sergioramos/yarn-actions@v6
       with:
         args: package
