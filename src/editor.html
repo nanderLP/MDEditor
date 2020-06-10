@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor</title>
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
+        content="default-src 'self'; image-src data: 'unsafe-eval'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
     <meta http-equiv="X-Content-Security-Policy"
-        content="default-src 'self'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
+        content="default-src 'self' 'unsafe-inline'; image-src data: 'unsafe-eval'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
     <link rel="stylesheet" href="css/editor/editor.css">
     <link rel="stylesheet" href="../node_modules/@mdi/font/css/materialdesignicons.min.css">
 </head>

@@ -5,6 +5,7 @@ const customTitlebar = require('custom-electron-titlebar');
 new customTitlebar.Titlebar({
   menu: null,
   titleHorizontalAlignment: 'left',
+  shadow: true,
 });
 
 const x = document.getElementsByClassName('button');
