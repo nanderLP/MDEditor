@@ -1,0 +1,21 @@
+# This will try to package the application
+
+name: Electron Package
+
+on:
+  push:
+    branches: [ master, development ]
+  pull_request:
+    branches: [ master, development ]
+
+jobs:
+  package:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: Package
+      uses: CultureHQ/actions-yarn@master
+      with:
+        args: package
