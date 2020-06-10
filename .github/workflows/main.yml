@@ -17,5 +17,3 @@ jobs:
     steps:
     - name: yarn actions (yaml)
       uses: sergioramos/yarn-actions@v6
-      with:
-        args: package
