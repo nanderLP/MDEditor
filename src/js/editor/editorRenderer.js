@@ -1,6 +1,24 @@
 const { ipcRenderer } = require('electron');
 const customTitlebar = require('custom-electron-titlebar');
 const { remote } = require('electron');
+const MarkdownIt = require('markdown-it');
+const CodeMirror = require('codemirror');
+require('codemirror/mode/markdown/markdown');
+
+const md = new MarkdownIt();
+
+md.configure({
+  html: true,
+  breaks: true,
+});
+
+const editor = CodeMirror(document.getElementById('editor'), {
+  mode: 'markdown',
+});
+
+editor.on('change', (instance) => {
+  document.getElementById('preview').innerHTML = md.render(instance.getValue());
+});
 
 const { Menu, MenuItem } = remote;
 

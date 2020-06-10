@@ -7117,34 +7117,18 @@ body, html {
   background-color: #444444;
   overflow-y: hidden; }
 
-#topbar {
-  background-color: #525252;
-  height: 1rem;
-  position: relative;
-  border: 2px solid;
-  display: flex;
-  flex-direction: row; }
+#editor {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  float: left;
+  padding: 1rem; }
 
-/*#output {
-  border: solid 1px;
-  border-color: black;
-  margin-left: 500px;
-}
-#lines {
-  margin-top: 14px;
-  margin-left: 3px;
-  color: black;
-}
-#editArea {
-  margin-left: 30px;
-  margin-top: -139px;
-  background-color: grey;
-}
-#output {
-  margin-left: 690px;
-  margin-right: 0px;
-  margin-top: -1022px;
-  height: 1010px;
-}*/
+#preview {
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: white;
+  padding: 1rem; }
 
 /*# sourceMappingURL=editor.css.map */
