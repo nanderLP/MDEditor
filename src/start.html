@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>MDEditor</title>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
-  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src data:; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
+  <meta http-equiv="X-Content-Security-Policy"
+    content="default-src 'self' 'unsafe-inline'; img-src data:; script-src renderer 'self'; style-src 'self' 'unsafe-inline';">
   <link rel="stylesheet" href="css/start/start.css">
   <link rel="stylesheet" href="../node_modules/@mdi/font/css/materialdesignicons.min.css">
 </head>
@@ -12,22 +15,23 @@
 <body>
   <div class="container">
     <div id="options" class="box">
-        <div id="buttons-list">
-          <button id="new" class="button is-dark">
-            <span>New File</span>
-            <span class="icon mdi mdi-plus mdi-light mdi-24px" \>
-          </button>
-          <button id="load" class="button is-dark">
-            <span>Load File</span>
-            <span class="icon mdi mdi-folder mdi-light mdi-24px" \>
-          </button>
-          <button id="settings" class="button is-dark">
-            <span>Settings</span>
-            <span class="icon mdi mdi-cog mdi-light mdi-24px" \>
-          </button>
-        </div>
+      <div id="buttons-list">
+        <button id="new" class="button is-dark">
+          <span>New File</span>
+          <span class="icon mdi mdi-plus mdi-light mdi-24px" \>
+        </button>
+        <button id="load" class="button is-dark">
+          <span>Load File</span>
+          <span class="icon mdi mdi-folder mdi-light mdi-24px" \>
+        </button>
+        <button id="settings" class="button is-dark">
+          <span>Settings</span>
+          <span class="icon mdi mdi-cog mdi-light mdi-24px" \>
+        </button>
+      </div>
     </div>
   </div>
   <script src="js/start/startRenderer.js"></script>
 </body>
+
 </html>
