@@ -9,6 +9,7 @@
 body, html {
   background-color: #444444;
   overflow-y: hidden;
+  color: white;
 }
 
 #editor {
@@ -18,11 +19,17 @@ body, html {
   float: left;
   padding: 1rem;
 }
+
 #preview {
   width: 50%;
   height: 100%;
   float: left;
   color: white;
   padding: 1rem;
+  max-width: 100%;
+
+  .content {
+    color: white!important;
+  }
 }
 

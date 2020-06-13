@@ -12,13 +12,20 @@ md.configure({
   breaks: true,
 });
 
+
 const editor = CodeMirror(document.getElementById('editor'), {
   mode: 'markdown',
+  lineNumbers: true,
+  lineBreak: true,
 });
+
+editor.setSize("100%", "100%");
 
 editor.on('change', (instance) => {
   document.getElementById('preview').innerHTML = md.render(instance.getValue());
+  console.log(instance.getValue())
 });
+
 
 const { Menu, MenuItem } = remote;
 

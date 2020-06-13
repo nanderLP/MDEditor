@@ -7115,7 +7115,8 @@ label.panel-block {
 
 body, html {
   background-color: #444444;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  color: white; }
 
 #editor {
   width: 50%;
@@ -7129,6 +7130,9 @@ body, html {
   height: 100%;
   float: left;
   color: white;
-  padding: 1rem; }
+  padding: 1rem;
+  max-width: 100%; }
+  #preview .content {
+    color: white !important; }
 
 /*# sourceMappingURL=editor.css.map */
