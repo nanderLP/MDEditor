@@ -1,26 +1,13 @@
 @charset "utf-8";
 
-// 1. Import the initial variables
-@import "../../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../utils/default.scss";
 
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-$box-background-color: #525252;
-//$box-padding: 5rem;
-
-// 2. Import the rest of Bulma
-@import "../../../node_modules/bulma/bulma";
-
-// 3. normal css
- 
 body,
-html { 
+html {
+  background-color: $background-color;
   width: 100%;
   height: 100%;
   overflow-y: hidden;
-}
- 
-body {
-  background-color: #666666;
 }
 
 .container {

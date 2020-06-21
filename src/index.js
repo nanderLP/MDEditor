@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, nativeTheme } = require('electron');
 const path = require('path');
 const DiscordRPC = require('discord-rpc');
 
@@ -6,6 +6,8 @@ require('./js/start/start');
 require('./js/editor/editor');
 
 global.currentFile = null;
+
+global.darkMode = nativeTheme.shouldUseDarkColors;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 // eslint-disable-next-line max-len

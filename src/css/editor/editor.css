@@ -7113,7 +7113,8 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-body, html {
+body,
+html {
   background-color: #444444;
   overflow-y: hidden;
   color: white; }
@@ -7122,8 +7123,7 @@ body, html {
   width: 50%;
   height: 100%;
   background-color: white;
-  float: left;
-  padding: 1rem; }
+  float: left; }
 
 #preview {
   width: 50%;
