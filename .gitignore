@@ -89,5 +89,5 @@ typings/
 # Electron-Forge
 out/
 
-# Css
-css/
+# compiled CSS
+src/css/
