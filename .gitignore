@@ -91,3 +91,6 @@ out/
 
 # compiled CSS
 /src/css
+
+# IDE
+.idea
