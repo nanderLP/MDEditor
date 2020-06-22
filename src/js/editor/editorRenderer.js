@@ -54,7 +54,6 @@ menu.append(new MenuItem({
   ],
 }));
 
-
 const title = new customTitlebar.Titlebar({
   shadow: true,
 });
