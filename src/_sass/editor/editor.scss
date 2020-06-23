@@ -1,12 +1,9 @@
 @charset "utf-8";
 
-// 1. Import the initial variables
-@import "../../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../utils/default.scss";
 
-// 2. Import the rest of Bulma
-@import "../../../node_modules/bulma/bulma";
-
-body, html {
+body,
+html {
   background-color: #444444;
   overflow-y: hidden;
   color: white;
@@ -17,7 +14,6 @@ body, html {
   height: 100%;
   background-color: white;
   float: left;
-  padding: 1rem;
 }
 
 #preview {
@@ -29,7 +25,6 @@ body, html {
   max-width: 100%;
 
   .content {
-    color: white!important;
+    color: white !important;
   }
 }
-

@@ -88,3 +88,9 @@ typings/
 
 # Electron-Forge
 out/
+
+# compiled CSS
+/src/css
+
+# IDE
+.idea

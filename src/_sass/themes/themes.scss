@@ -1,0 +1,9 @@
+// Select theme based on body attribute
+
+body[theme="dark"] {
+    @import "dark";
+}
+
+body[theme="light"] {
+    @import "light";
+}
