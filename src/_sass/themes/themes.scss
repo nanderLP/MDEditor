@@ -1,9 +1,12 @@
-// Select theme based on body attribute
-
-body[theme="dark"] {
-    @import "dark";
-}
-
-body[theme="light"] {
-    @import "light";
-}
+$themes: (
+    light: (
+        background-color: #F6F6F6,
+        box-background-color: #EAEAEA,
+        color: #000000
+    ),
+    dark: (
+        background-color: #444444,
+        box-background-color: #525252,
+        color: #FFFFFF,
+    ),
+);

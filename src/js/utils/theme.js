@@ -1,11 +1,10 @@
-const { readFileSync } = require('fs');
-const path = require('path');
+const storage = require('electron-json-storage');
 
-function getTheme() {
-  const file = JSON.parse(
-    readFileSync(path.join(__dirname, 'config.json')),
-  );
-  return file.theme;
+function setTheme() {
+  storage.get('theme', (error, data) => {
+    if (error) console.error(error);
+    document.getElementById('root').classList.add(`theme-${data.theme}`);
+  });
 }
 
-document.body.setAttribute('theme', getTheme());
+setTheme();

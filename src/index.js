@@ -1,6 +1,17 @@
+// const glasstron = require('glasstron'); TODO add blur support
+// glasstron.init();
+
 const { app, BrowserWindow, nativeTheme } = require('electron');
 const path = require('path');
 const DiscordRPC = require('discord-rpc');
+const storage = require('electron-json-storage');
+
+if (storage.has('theme', (error, hasKey) => {
+  if (error) console.error(error);
+  if (!hasKey) {
+    storage.set('theme', { theme: 'dark' });
+  }
+}));
 
 require('./js/start/start');
 require('./js/editor/editor');
@@ -31,6 +42,11 @@ const createWindow = () => {
     autoHideMenuBar: true,
     frame: false,
   });
+  /* glasstron.update(mainWindow, {
+    windows: {blurType: 'acrylic'},
+    macos: {vibrancy: 'fullscreen-ui'},
+    linux: {requestBlur: true} // KWin
+  }); */ // TODO add blur support
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'start.html'));
