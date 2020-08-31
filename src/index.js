@@ -6,12 +6,14 @@ const path = require('path');
 const DiscordRPC = require('discord-rpc');
 const storage = require('electron-json-storage');
 
-if (storage.has('theme', (error, hasKey) => {
-  if (error) console.error(error);
-  if (!hasKey) {
-    storage.set('theme', { theme: 'dark' });
-  }
-}));
+if (
+  storage.has('theme', (error, hasKey) => {
+    if (error) console.error(error);
+    if (!hasKey) {
+      storage.set('theme', { theme: 'dark' });
+    }
+  })
+);
 
 require('./js/start/start');
 require('./js/editor/editor');
@@ -22,7 +24,8 @@ global.darkMode = nativeTheme.shouldUseDarkColors;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 // eslint-disable-next-line max-len
-if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
+if (require('electron-squirrel-startup')) {
+  // eslint-disable-line global-require
   app.quit();
 }
 
@@ -37,19 +40,18 @@ const createWindow = () => {
     minHeight: 600,
     webPreferences: {
       nodeIntegration: true,
-      enableRemoteModule: true,
+      enableRemoteModule: true
     },
     autoHideMenuBar: true,
-    frame: false,
-  });
+    frame: false
+  }); // TODO add blur support // and load the index.html of the app.
   /* glasstron.update(mainWindow, {
     windows: {blurType: 'acrylic'},
     macos: {vibrancy: 'fullscreen-ui'},
     linux: {requestBlur: true} // KWin
-  }); */ // TODO add blur support
-
-  // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'start.html'));
+  }); */ mainWindow.loadFile(
+    path.join(__dirname, 'start.html')
+  );
 };
 
 // This method will be called when Electron has finished
@@ -89,7 +91,7 @@ async function setActivity() {
     details: 'Editing some cool stuff :)',
     state: 'Editing a Markdown File',
     startTimestamp,
-    instance: false,
+    instance: false
   });
 }
 
